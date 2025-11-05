@@ -45,11 +45,11 @@ document.querySelector("#skip").addEventListener("click", function() {
 	console.log("In skip")
 	console.log("The duration is " + video.duration)
 	console.log("The current location is " + video.currentTime)
-	if (video.currentTime + 5 >= video.duration){
+	if (video.currentTime + 10 >= video.duration){
 		video.currentTime = 0;
 		console.log("The new location is " + video.currentTime)
 	} else {
-		video.currentTime += 5;
+		video.currentTime += 10;
 		console.log("The new location is " + video.currentTime)
 	}
 	console.log("Current time is " + video.currentTime);
